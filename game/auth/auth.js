@@ -11,7 +11,7 @@ usernameField: 'username',
   passwordField: 'password',
   passReqToCallback: true 
 }, async (req, username, password, done) => {  
-  /* In the callback function there is the logic for the singup route.Lastly, we called the done function that was passed as an argument to the callback function. */
+  //In the callback function there is the logic for the singup route.Lastly, we called the done function that was passed as an argument to the callback function.
   try {
     const { username } = req.body;
     const user = await UserModel.create({username,password});
