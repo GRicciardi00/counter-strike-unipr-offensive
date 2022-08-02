@@ -1,4 +1,4 @@
-# counter-strike-unipr-offensive
+# Counter strike: UNIPR offensive
 The idea comes from the passion of both of us for the well-known game Counter Strike Global Offensive and the full sharing of the thought by the French poet Anatole France: 
 > ''you only learn by having fun''
 >   
