@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sign Up Page</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+  <link href="css/main.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="text-center">
+  <form class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Sign Up</h1>
+    <label for="username" class="sr-only">Username</label>
+    <input type="username" id="username" class="form-control" placeholder="Username" required autofocus>
+    <label for="password" class="sr-only">Password</label>
+    <input type="password" id="password" class="form-control" placeholder="Password" required>
+    <a class="btn btn-lg btn-primary btn-block" onClick="signUp()">Sign up</a>
+    <a href="/index.html">Already have an account? Login here.</a>
+  </form>
+  <script>
+    function signUp() {
+    var data = {
+      username: document.forms[0].elements[0].value,
+      password: document.forms[0].elements[1].value,
+    };
+    $.ajax({
+      type: 'POST',
+      url: '/signup',
+      data,
+      success: function (data) {
+        window.alert('user created successfully');
+        window.location.replace('/index.html');
+      },
+      error: function (xhr) {
+        window.alert('user already exist');
+        window.location.replace('/signup.html');
+      }
+    });
+  }
+  </script>
+</body>
+</html>
