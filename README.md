@@ -1,7 +1,8 @@
 # counter-strike-unipr-offensive
 The idea comes from the passion of both of us for the well-known game Counter Strike Global Offensive and the full sharing of the thought "you only learn by having fun." by the French poet Anatole France.
 The project is a top-down shooter multiplayer with client-server architecture, the server is an authoritative_server.
-![gameplay](https://user-images.githubusercontent.com/102236495/182361481-5aa5a59b-fd5b-4413-828c-3925a34c2bd7.png)
+![gameplay](https://user-images.githubusercontent.com/102236495/182361788-52ce005a-7a34-4033-ac7b-c56f3a6a3594.png)
+
 
 ##Game Architecture 
 
